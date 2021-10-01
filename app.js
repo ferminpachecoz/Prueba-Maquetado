@@ -4,7 +4,7 @@
         var _seconds = 0 * 1000;
         var _minutes = 0 * 1000 * 60;
         var _hours = 0 * 1000 * 60 * 60;
-        var _days = 10 * 1000 * 60 * 60 * 24;
+        var _days = 100 * 1000 * 60 * 60 * 24;
         var milisegundos = _seconds + _minutes + _hours + _days;
         f__countdown = new Date(new Date().getTime() + milisegundos);
         setInterval(fnCountDown , 1000);
