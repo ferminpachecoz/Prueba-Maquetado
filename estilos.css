@@ -19,6 +19,7 @@
 /* Video CSS */
 .video-container{
     position: relative;
+    z-index: 1;
 }
 
 .video-container video{
@@ -160,6 +161,7 @@
     left: 35%;
     background-color: rgb(156, 58, 58);
     display: none;
+    z-index: 100;
 }
 .modal-logo{
     background-color: rgb(128, 4, 4);
@@ -167,4 +169,11 @@
 }
 .modal-logo img{
     width: 200px;
+}
+.exit{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    text-decoration: none;
+    color: crimson;
 }

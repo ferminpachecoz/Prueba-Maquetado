@@ -4,7 +4,7 @@
         var _seconds = 0 * 1000;
         var _minutes = 0 * 1000 * 60;
         var _hours = 0 * 1000 * 60 * 60;
-        var _days = 100 * 1000 * 60 * 60 * 24;
+        var _days = 10 * 1000 * 60 * 60 * 24;
         var milisegundos = _seconds + _minutes + _hours + _days;
         f__countdown = new Date(new Date().getTime() + milisegundos);
         setInterval(fnCountDown , 1000);
@@ -25,3 +25,14 @@
         document.querySelector('#day').innerHTML = ('0' + day).slice(-2);
     }
 
+$(document).ready(function () {
+    $('.icono-chat').click(function(){
+        $(".modal-section").css("display","block");
+        $(".video-container").css("opacity","0.7");
+        $(".modal-section").css("opacity","1");
+    })
+    $('.exit').click(function(){
+        $(".modal-section").css("display","none")
+        $(".video-container").css("opacity","1");
+    })
+});
