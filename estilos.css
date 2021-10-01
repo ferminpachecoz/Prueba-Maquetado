@@ -31,6 +31,7 @@
 .video-container{
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .video-container video{
@@ -233,4 +234,173 @@
     font-family: tungsten-black-light;
     font-size: 20px;
     border: none;
+}
+@media (max-width: 768px){
+    .video-container video{
+        height: 420px;
+    }
+    .icono-chat a{
+        top: 3%;
+        right: 4%;
+        width: 30px;
+    }
+    .icono-telefono{
+        top: 3%;
+        right: 8.5%;
+        width: 30px;
+    }
+    .logo-chico img{
+        position: absolute;
+        top: 2%;
+        left: 5%;
+        width: 45px;
+    }
+    .container{
+        top: 35%;
+        left: 25%;
+    }
+    .container p{
+        font-size: 60px;
+    }
+    #palabras{
+        font-size: 40px;
+        top: 50%;
+        left: 28%;
+    }
+    #palabras-chicas{
+        font-size: 20px;
+        top: 77%;
+        left: 39%;
+    }
+    .icono-facebook{
+        position: absolute;
+        bottom: 9.5%;
+        left: 40%;
+        width: 30px;
+        fill: #eb2d37;
+    }
+    .icono-twitter{
+        position: absolute;
+        bottom: 9.5%;
+        left: 44%;
+        width: 30px;
+        fill: #eb2d37;
+    }
+    .icono-instagram{
+        position: absolute;
+        bottom: 9.5%;
+        left: 49%;
+        width: 30px;
+        fill: #eb2d37;
+    }
+    .icono-youtube{
+        position: absolute;
+        bottom: 9.5%;
+        left: 54%;
+        width: 30px;
+        fill: #eb2d37;
+    }
+}
+@media (max-width: 376px){
+    .video-container video{
+        height: 200px;
+    }
+    .icono-chat a{
+        top: 3%;
+        right: 4%;
+        width: 27px;
+    }
+    .icono-telefono{
+        top: 3%;
+        right: 11%;
+        width: 27px;
+    }
+    .logo-chico img{
+        position: absolute;
+        top: 2%;
+        left: 5%;
+        width: 40px;
+    }
+    .full-logo img{
+        position: absolute;
+        top: 15%;
+        left: 39%;
+        width: 100px;
+    }
+    .container{
+        top: 45%;
+        left: 25%;
+    }
+    .container p{
+        font-size: 30px;
+        margin-right: 2px;
+        padding: 0 2px;
+    }
+    #palabras{
+        font-size: 20px;
+        top: 60%;
+        left: 28%;
+    }
+    #palabras-chicas{
+        font-size: 12px;
+        top: 77%;
+        left: 37%;
+    }
+    .icono-facebook{
+        bottom: 5%;
+        left: 37%;
+        width: 20px;
+    }
+    .icono-twitter{
+        bottom: 5%;
+        left: 43%;
+        width: 20px;
+    }
+    .icono-instagram{
+        bottom: 5%;
+        left: 49.5%;
+        width: 20px;
+    }
+    .icono-youtube{
+        bottom: 5%;
+        left: 56%;
+        width: 20px;
+    }
+    .modal-section{
+        top: 10%;
+        left: 13%;
+    }
+    .modal-logo{
+        background-color: rgb(66, 6, 6);
+        text-align: center;
+    }
+    .modal-logo img{
+        width: 150px;
+    }
+    .formulario-modal{
+        margin: 10px;
+    }
+    .input input{
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .input input::placeholder{
+        font-size: 14px;
+    }
+    .input textarea{
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .input textarea::placeholder{
+        font-size: 14px;
+    }
+    .p-text-form{
+        font-size: 16px;
+    }
+    .button-submit{
+        padding: 10px 30px;
+        font-size: 14px;
+    }
 }
