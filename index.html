@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flyer</title>
+    <title>Apercat</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="./img/favicon/favicon-16x16.png">
 </head>
 <body>
     
     <div class="video-container">
-        <video controls autoplay loop>
+        <video autoplay loop muted>
             <source src="./media/video-banner-01.mp4" type="video/mp4">
             <source src="./media/video-banner-01.ogv" type="video/ogv">
             <source src="./media/video-banner-01.webm" type="video/webm">
         </video>
+
+        
 
         <div class="container">
             <p id="day"></p><p id="letter">D</p>
@@ -91,22 +93,24 @@
             <div class="modal-logo">
                 <img src="./img/temp/logo-04.png" alt="Logo Modal">
             </div>
-            <div>
-                <p>DEJANOS TU MENSAJE</p><br>
+            <div class="p-text-form">
+                <p>DEJANOS TU MENSAJE</p>
                 <p>NOS PONDREMOS EN CONTACTO A LA BREVEDAD!</p>
             </div>
 
             <form action="" method="" class="formulario-modal">
-                <div>
+                <div class="input">
                     <input type="text" name="nombre" placeholder="NOMBRE...">
                 </div>
-                <div>
+                <div class="input">
                     <input type="email" name="email" placeholder="EMAIL...">
                 </div>
-                <div>
-                    <input type="textarea" name="mensaje" placeholder="MENSAJE...">
+                <div class="input">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="MENSAJE..."></textarea>
                 </div>
-                <button type="submit">ENVIAR</button>
+                <!-- <button type="submit" class="button-submit">ENVIAR</button> -->
+                <input type="submit" class="button-submit" value="ENVIAR">
+                
             </form>
             <a href="#" class="exit">X</a>
         </section>

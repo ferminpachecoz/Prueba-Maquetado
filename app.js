@@ -28,11 +28,9 @@
 $(document).ready(function () {
     $('.icono-chat').click(function(){
         $(".modal-section").css("display","block");
-        $(".video-container").css("opacity","0.7");
-        $(".modal-section").css("opacity","1");
     })
     $('.exit').click(function(){
         $(".modal-section").css("display","none")
-        $(".video-container").css("opacity","1");
     })
 });
+    
