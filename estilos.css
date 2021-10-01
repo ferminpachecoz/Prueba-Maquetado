@@ -2,36 +2,169 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+@font-face {
+    font-family: tungsten-black;
+    src: url(./fonts/Tungsten-Black.ttf);
+}
+@font-face {
+    font-family: tungsten-black-thin;
+    src: url(./fonts/Tungsten-Thin.ttf);
+}
+@font-face {
+    font-family: tungsten-black-medium;
+    src: url(./fonts/Tungsten-Medium.ttf);
+}
+/*Tungsten-Black.ttf*/
 /* Video CSS */
 .video-container{
-    position: static;
+    position: relative;
 }
 
 .video-container video{
     width: 100%;
-    height: 600px;
+    height: 620px;
     background-color: black;
 }
 
-.full-logo{
+.full-logo img{
     position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 200px;
-    color: #fff;
+    top: 15%;
+    left: 43%;
+    width: 150px;
+}
+.logo-chico img{
+    position: absolute;
+    top: 2%;
+    left: 11%;
+    width: 45px;
+}
+.icono-telefono{
+    position: absolute;
+    top: 3%;
+    right: 15%;
+    width: 30px;
+    fill: #eb2d37;
+}
+.icono-telefono:hover .telefono{
+    fill: #fff;
+}
+.icono-telefono:hover{
+    width: 33px;
+}
+.icono-chat a{
+    position: absolute;
+    top: 3%;
+    right: 12.7%;
+    width: 30px;
+    fill: #eb2d37;
+}
+.icono-chat:hover .chat{
+    fill: #fff;
+}
+.icono-chat:hover{
+    width: 33px;
+}
+.icono-facebook{
+    position: absolute;
+    bottom: 9.5%;
+    left: 41%;
+    width: 33px;
+    fill: #eb2d37;
+}
+.icono-facebook:hover .facebook{
+    fill: #fff;
+}
+.icono-facebook:hover{
+    width: 35px;
+}
+.icono-twitter{
+    position: absolute;
+    bottom: 9.5%;
+    left: 44.5%;
+    width: 33px;
+    fill: #eb2d37;
+}
+.icono-twitter:hover .twitter{
+    fill: #fff;
+}
+.icono-twitter:hover{
+    width: 35px;
+}
+.icono-instagram{
+    position: absolute;
+    bottom: 9.5%;
+    left: 48%;
+    width: 33px;
+    fill: #eb2d37;
+}
+.icono-instagram:hover .instagram{
+    fill: #fff;
+}
+.icono-instagram:hover{
+    width: 35px;
+}
+.icono-youtube{
+    position: absolute;
+    bottom: 9.5%;
+    left: 51.5%;
+    width: 33px;
+    fill: #eb2d37;
+}
+.icono-youtube:hover .st0{
+    fill: #fff;
+}
+.icono-youtube:hover{
+    width: 35px;
 }
 
 
 /* CountDown CSS*/
 .container{
     position: absolute;
-    top: 45%;
-    left: 20%;
+    top: 35%;
+    left: 27%;
 }
 .container p{
-    font-size: 180px;
+    font-size: 100px;
     display: inline;
     margin-right: 5px;
     color: #fff;
-    padding: 0 10px;
+    padding: 0 5px;
+    font-family: tungsten-black;
+}
+#letter{
+    font-family: tungsten-black-thin;
+}
+#palabras{
+    position: absolute;
+    font-size: 60px;
+    color: #fff;
+    top: 50%;
+    left: 28%;
+    font-family: tungsten-black-medium;
+}
+#palabras-chicas{
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    top: 77%;
+    left: 40%;
+    font-family: tungsten-black-medium;
+}
+
+.modal-section{
+    border: 1px solid black;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background-color: rgb(156, 58, 58);
+    display: none;
+}
+.modal-logo{
+    background-color: rgb(128, 4, 4);
+    text-align: center;
+}
+.modal-logo img{
+    width: 200px;
 }
