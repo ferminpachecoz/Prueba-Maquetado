@@ -19,10 +19,15 @@
         var hour = Math.floor((segundos / (60 * 60)) % (60 * 60) % 24);
         var day = Math.floor((segundos / (24 * 60 * 60)) % (60 * 60));
 
-        document.querySelector('#second').innerHTML = ('0' + second).slice(-2);
-        document.querySelector('#minute').innerHTML = ('0' + minute).slice(-2);
-        document.querySelector('#hour').innerHTML = ('0' + hour).slice(-2);
-        document.querySelector('#day').innerHTML = ('0' + day).slice(-2);
+        // document.querySelector('#second').innerHTML = ('0' + second).slice(-2);
+        // document.querySelector('#minute').innerHTML = ('0' + minute).slice(-2);
+        // document.querySelector('#hour').innerHTML = ('0' + hour).slice(-2);
+        // document.querySelector('#day').innerHTML = ('0' + day).slice(-2);
+        
+        $('#second').html(('0' + second).slice(-2));
+        $('#minute').html(('0' + minute).slice(-2));
+        $('#hour').html(('0' + hour).slice(-2));
+        $('#day').html(('0' + day).slice(-2));
     }
 
 $(document).ready(function () {
